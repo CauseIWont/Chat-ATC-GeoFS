@@ -9,7 +9,7 @@ var TALK = false;
 //var htmltoadd = '<iframe src="pg.html" style="display: none" id="webATC" onload=\'window.atc = document.getElementById("webATC");\'></iframe>';
 //document.documentElement.innerHTML += htmltoadd;
 document.addEventListener("keydown", function(e) {
-	if (e.keyCode == 81) {
+	if (e.keyCode == 76) {
 		if (ctrl) {
 			ctrl = false;
 			var freq = prompt("Enter frequency:");

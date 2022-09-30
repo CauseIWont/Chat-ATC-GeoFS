@@ -1,1 +1,6 @@
 This is more or less just a edit I made to a out of date addon for the free online Flight Simulator, GeoFS
+If it says 'failed to start' please re-type the frequency. It usually fixes the issue.
+
+Planned Updates:
+Removal of old voice code (refuses to work at the moment without it)
+In-Game IFrame

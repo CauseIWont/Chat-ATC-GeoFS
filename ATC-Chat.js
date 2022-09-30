@@ -1,10 +1,3 @@
-///////////////////////////////////////////////////
-//LowChat ATC
-//Copyright Yotam180, 2017 | CauseIWont, 2022
-//This is just some random stuff. Have fun with this.
-///////////////////////////////////////////////////
-
-
 var ctrl = false;
 var atc;
 var TALK = false;
@@ -23,12 +16,6 @@ document.addEventListener("keydown", function(e) {
 				return;
 			}
 			atc = window.open("https://chat.hyperjs.ml/" + freq,'_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=10, height=10, visible=none', ''); 
-		}
-		else {
-			// Push to talk TRUE
-			if (TALK) return;
-			TALK = true;
-			atc.postMessage("talk", "*");
 		}
 	}
 	if (e.keyCode == 17 || e.keyCode == 87) {

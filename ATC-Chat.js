@@ -22,14 +22,3 @@ document.addEventListener("keydown", function(e) {
 		ctrl = true;
 	}
 }, false);
-
-document.addEventListener("keyup", function(e) {
-	if (e.keyCode == 81) {
-		// Push to talk FALSE
-		TALK = false;
-		atc.postMessage("notalk", "*");
-	}
-	if (e.keyCode == 17 || e.keyCode == 87) {
-		ctrl = false;
-	}
-}, false);

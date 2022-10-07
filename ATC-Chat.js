@@ -1,12 +1,9 @@
-var ctrl = false;
+var shift = false;
 var atc;
-var TALK = false;
-//var htmltoadd = '<iframe src="pg.html" style="display: none" id="webATC" onload=\'window.atc = document.getElementById("webATC");\'></iframe>';
-//document.documentElement.innerHTML += htmltoadd;
 document.addEventListener("keydown", function(e) {
 	if (e.keyCode == 76) {
-		if (ctrl) {
-			ctrl = false;
+		if (shift) {
+			shift = false;
 			var freq = prompt("Enter frequency:");
 			if (atc) {
 				atc.close();
@@ -15,10 +12,11 @@ document.addEventListener("keydown", function(e) {
 			if (freq.length < 5) {
 				return;
 			}
-			atc = window.open("https://chat.hyperjs.ml/" + freq,'_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=10, height=10, visible=none', ''); 
+			document.getElementsByClassName("geofs-location-list")[0].innerHTML = document.getElementsByClassName("geofs-location-list")[0].innerHTML + '<iframe id="chatIframe", width="1000", height="1500", left=350,top=50, src="https://chat.hyperjs.ml/GeoFS"</iframe>';
+			document.getElementById("chatIframe").src = "https://chat.hyperjs.ml/" + freq
 		}
 	}
 	if (e.keyCode == 17 || e.keyCode == 87) {
-		ctrl = true;
+		shift = true;
 	}
 }, false);

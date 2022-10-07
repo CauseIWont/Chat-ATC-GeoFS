@@ -5,7 +5,7 @@ newPanel.innerHTML = panelHTML
 let sidePanel = document.getElementsByClassName("geofs-ui-left")[0]
 document.getElementsByClassName("geofs-ui-left")[0].appendChild(newPanel)
 let buttonDiv = document.createElement("div");
-buttonDiv.innerHTML = '<button class="mdl-button mdl-js-button geofs-f-standard-ui geofs-mediumScreenOnly" data-toggle-panel=".geofs-autoland-list" data-tooltip-classname="mdl-tooltip--top" id="ilsbutton" tabindex="0" data-upgraded=",MaterialButton">Addon chat</button>'
+buttonDiv.innerHTML = '<button class="mdl-button mdl-js-button geofs-f-standard-ui geofs-mediumScreenOnly" data-toggle-panel=".geofs-autoland-list" data-tooltip-classname="mdl-tooltip--top" id="ilsbutton" tabindex="0" data-upgraded=",MaterialButton">ATC Chat</button>'
 document.body.appendChild(buttonDiv);
 document.getElementsByClassName("geofs-ui-bottom")[0].appendChild(buttonDiv);
 let element = document.getElementById("ilsbutton");

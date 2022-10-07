@@ -1,14 +1,9 @@
 var shift = false;
-var atc;
 document.addEventListener("keydown", function(e) {
 	if (e.keyCode == 76) {
 		if (shift) {
 			shift = false;
 			var freq = prompt("Enter frequency:");
-			if (atc) {
-				atc.close();
-				atc = null;
-			}
 			if (freq.length < 5) {
 				return;
 			}

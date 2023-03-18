@@ -20,7 +20,7 @@ document.addEventListener("keydown", function(e) {
 				return;
 			}
 			setTimeout(() => {
-			newPanel.innerHTML = newPanel.innerHTML + '<iframe id="chatIframe", width="1000", height="1500", left=350,top=50, src="https://chat.hyperjs.ml/GeoFS"</iframe>';
+			newPanel.innerHTML = newPanel.innerHTML + '<iframe width="1093" height="624" src="https://www.youtube.com/embed/C7Ub-MDbPm4" title="ZENIGATA MARCH 2019" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			document.getElementById("chatIframe").src = "https://chat.hyperjs.ml/" + freq
 			},100)
 		}
